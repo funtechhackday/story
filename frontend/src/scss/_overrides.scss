@@ -1,0 +1,24 @@
+// override bootstrap default styles here
+
+// variables
+$text-color: #9fa1a8;
+
+// Navbar nav links
+//
+// Builds on top of the `.nav` components with its own modifier class to make
+// the nav the full height of the horizontal nav (above 768px).
+
+.navbar-nav { // Uncollapse the nav
+  @media (min-width: $grid-float-breakpoint) {
+    float: none;
+    // margin: 0;
+
+    // > li {
+    //   float: left;
+    //   > a {
+    //     padding-top:    $navbar-padding-vertical;
+    //     padding-bottom: $navbar-padding-vertical;
+    //   }
+    // }
+  }
+}

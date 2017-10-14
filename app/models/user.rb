@@ -4,6 +4,10 @@ class User < ApplicationRecord
 
   after_commit :create_self_actor, on: :create
 
+  def invalidate_token
+    self.update_columns(token: nil)
+  end
+
   private
   def create_self_actor
     auth = user_authentications.first!

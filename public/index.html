@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang=ru>
+
+<head>
+
+
+	<meta charset=utf-8 />
+	<meta name=viewport content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name=description content="">
+	<meta name=keywords content="">
+
+	<link rel="shortcut icon" href=/favicon.png type=image/x-icon>
+
+
+	<script src=https://use.fontawesome.com/cf6ddce311.js></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,400i,500,700&amp;subset=cyrillic-ext,latin-ext" rel=stylesheet>
+	<link rel=stylesheet href=css/style.css />
+
+	<!--[if lt IE 9]>
+<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+	<!-- <meta http-equiv="X-UA-Compatible" content="chrome=1" /> -->
+	<!-- for ie -->
+
+
+	<title>Welcome Story</title>
+<link href="css/style.css" rel="stylesheet"></head>
+
+<body class=lp>
+
+	<header>
+		<nav class="navbar navbar-default" role=navigation>
+			<div class=container>
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class=navbar-header>
+					<button type=button class=navbar-toggle data-toggle=collapse data-target=#bs-example-navbar-collapse-1>
+						<span class=sr-only>Toggle navigation</span>
+						<span class=icon-bar></span>
+						<span class=icon-bar></span>
+						<span class=icon-bar></span>
+					</button>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id=bs-example-navbar-collapse-1>
+					<ul class="nav navbar-nav no-login">
+						<li>
+							<span class=nowrap>Секреты о
+								<a href=#>Проекте</a>
+							</span>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav login">
+						<li>
+							<a href=#>
+								<i class="fa fa-pencil-square-o" aria-hidden=true></i> Создать Story</a>
+						</li>
+						<li>
+							<a href=#>
+								<img src=images/play.png alt="Story Play"/>
+							</a>
+						</li>
+						<li>
+							<a href=#>StoryMaker
+								<i class="fa fa-user-o" aria-hidden=true></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+	</header>
+
+	<div class=container>
+		<!-- stage welcome -->
+		<div class="row welcome no-login">
+			<div class="col-md-12 center">
+				<a href=/ >
+					<img src=images/logo.png alt=Story />
+				</a>
+
+				<h1>Интересные истории с Вашими любимыми и друзьями</h1>
+				<p>Посмотреть через
+					<a href=http://facebook.com target=_blank>Facebook
+						<i class="fa fa-facebook" aria-hidden=true></i>
+					</a> или через
+					<a href=http://vk.com target=_blank>Вконтакте
+						<i class="fa fa-vk" aria-hidden=true></i>
+					</a>
+				</p>
+				<div>
+					<img src=images/dummy.png alt="">
+				</div>
+			</div>
+		</div>
+
+		<!-- stage feed -->
+		<div class="feed hide">
+			<div class=row>
+				<div class="col-md-6 col-md-offset-3">
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs">
+						<li class=active>
+							<a href=#mystory data-toggle=tab>Мои Story</a>
+						</li>
+						<li>
+							<a href=#storyplay data-toggle=tab>StoryPlay</a>
+						</li>
+						<li>
+							<a href=#label-3 data-toggle=tab>Label Three</a>
+						</li>
+						<li>
+							<a href=#more data-toggle=tab>More</a>
+						</li>
+					</ul>
+
+					<!-- Tab panes -->
+					<div class=tab-content>
+						<div class="tab-pane active" id=mystory>
+							<div class=card>
+								<img class=img-responsive src=images/default-img.png alt=""/>
+								<div class=card-body>
+									<h3 class=title>Ромео и Джульетта</h3>
+									<p class=desc>Две равноуважаемых семьи. В Вероне, где встречают нас события, Ведут междоусобные бои И не хотят унять кровопролития.
+										Друг друга любят дети главарей, о им судьба подстраивает козни.</p>
+									<a href="" class="btn btn-default pull-right">Создать историю</a>
+								</div>
+							</div>
+							<div class=card>
+								<img class=img-responsive src=images/default-img.png alt=""/>
+								<div class=card-body>
+									<h3 class=title>Ромео и Джульетта</h3>
+									<p class=desc>Две равноуважаемых семьи. В Вероне, где встречают нас события, Ведут междоусобные бои И не хотят унять кровопролития.
+										Друг друга любят дети главарей, о им судьба подстраивает козни.</p>
+									<a href="" class="btn btn-default pull-right">Создать историю</a>
+								</div>
+							</div>
+						</div>
+						<div class=tab-pane id=storyplay>...</div>
+						<div class=tab-pane id=label-3>...</div>
+						<div class=tab-pane id=more>...</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- stage Add story, step 1 -->
+		<div class="addStory step-1 hide">
+			<div class=row>
+				<div class="col-md-6 col-md-offset-3">
+					<form role=form action=#>
+						<div class=form-group>
+							<label class=sr-only for=titleStory>Название персональной истории</label>
+							<input type=text class=form-control id=titleStory placeholder="Название персональной истории"/>
+						</div>
+						<div class=form-group>
+							<label class=sr-only for=authorName>Имя Автора</label>
+							<input type=text class=form-control id=authorName placeholder="Имя Автора"/>
+						</div>
+						<div class=form-group>
+							<label for=price>Цена </label>
+							<input type=number class="" id=price /> р.
+						</div>
+						<div class=form-group>
+							<label for=yearsGuard>Ограничение от </label>
+							<input type=number class="" id=yearsGuard /> лет
+						</div>
+						<div class=form-group>
+							<label class=sr-only for=descriptionStory>Описание</label>
+							<textarea name="" id=descriptionStory rows=5 placeholder=Описание></textarea>
+							<p class=help-block>(не более 300 символов)</p>
+						</div>
+						<button type=reset class=btn-btn-default>Отмена</button>
+						<button type=submit class="btn btn-primary pull-right">
+							<i class="fa fa-check" aria-hidden=true></i> Готово</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!-- stage Add story, step 2 -->
+		<div class="addStory step-2 hide">
+			<div class=card>
+				<div class="addImg rel">
+					<div class="placeholder-file abs">+</div>
+					<input type=file />
+				</div>
+				<div class=card-body>
+					<h3 class=title>Ромео и Джульетта</h3>
+					<p class=desc>Две равноуважаемых семьи. В Вероне, где встречают нас события, Ведут междоусобные бои И не хотят унять кровопролития.
+						Друг друга любят дети главарей, о им судьба подстраивает козни.</p>
+					<a href="" class="btn btn-default pull-right">Создать историю</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer></footer>
+
+<script type="text/javascript" src="main.js"></script></body>
+
+</html>

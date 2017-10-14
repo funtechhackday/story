@@ -1,0 +1,285 @@
+@import "vars";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+// @import "../../node_modules/font-awesome/scss/font-awesome";
+@import "overrides";
+
+/**** the STANDART CONTENT ELEMENTS *****/
+// =============================================================================
+// Only the most basic global styles for the website
+
+* {box-sizing: border-box;}
+
+html {
+  height: 100%;
+  font-size: 100.01%;
+}
+
+body {
+	// background: $col-bg-default;
+	color: $text-color;
+	font-family: $font-default;
+	font-size: 15px;
+	-webkit-font-smoothing: antialiased;
+	// font-smooth: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 1.5em;
+	// font-weight: bold;
+	// text-transform: uppercase;
+	color: $color-headline-default;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	margin-top: 0;
+	font-size: 26px;
+}
+
+a {
+	// color: $col-orange;
+	transition: color .25s linear;
+
+	// &:hover {color: $col-grey1;}
+}
+
+input {
+	// &::-webkit-input-placeholder {color: $col-grey2;}
+
+  // &:-moz-placeholder {color: $col-grey2;}
+  
+  &[type="number"] {
+    width: 50px;
+  }
+}
+
+textarea {
+  width: 100%;
+	// &::-webkit-input-placeholder {color: $col-grey2;}
+
+	// &:-moz-placeholder {color: $col-grey2;}
+}
+/**** END standard content elements ****/
+
+/***** BASE ELEMENT *****/
+// Universal Class
+// -------------------------//
+
+// positions element
+.rel {position: relative;}
+.abs {position: absolute;}
+.affix {position: fixed;}
+
+// floats element
+.left {float: left;}
+.right {float: right;}
+
+// clear
+.clear {
+	display: block;
+	clear: both;
+}
+
+.clear-left {
+	display: block;
+	clear: left;
+}
+
+.clear-right {
+	display: block;
+	clear: right;
+}
+
+// element mapping
+.overhide {overflow: hidden;}
+.vishid {visibility: hidden;}
+
+// display types
+.disnone {display: none;}
+.disinbl {display: inline-block;}
+.disblock {display: block;}
+.distab {display: table;}
+.distabrow {display: table-row;}
+.distabcell {display: table-cell;}
+
+// zero padding, margin and borders
+.nopad {padding: 0;}
+.nomrg {margin: 0;}
+.nobrd {border: 0;}
+
+.box-zero {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.list-box-zero {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+// align text horizontally
+.center {text-align: center;}
+.tleft {text-align: left;}
+.tright {text-align: right;}
+
+// vertical text alignment
+.top {vertical-align: top;}
+.middle {vertical-align: middle;}
+.bottom {vertical-align: bottom;}
+
+// text transform
+.uppercase {text-transform: uppercase;}
+.text-trans-none {text-transform: none;}
+
+// cutting string line (three dots)
+.text-overhide {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+// text decoration
+.underline {text-decoration: underline;}
+.text-decor-none {text-decoration: none;}
+// prohibition of transfer lines
+.nowrap {white-space: nowrap}
+
+// cursors
+.curpoint {cursor: pointer;}
+
+
+/************/
+/* template */
+/************/  
+.welcome {
+  padding-bottom: 20px;
+
+  img {
+    max-width: 90%;
+    height: auto;
+    margin: auto;
+  }
+}
+
+// .no-login {display: none}
+.login {display: none}
+
+.feed {
+  .nav-tabs {
+    margin-bottom: 20px;
+  }
+}
+
+.card {
+  max-width: 519px;
+  overflow: hidden;
+  border: 1px solid $gray-lighter;
+  margin: 0 auto 20px;
+  padding: 0 0 20px;
+  border-radius: 8px 8px 0 0;
+
+  .addImg {
+    height: 240px;
+    background: $gray-lighter;
+
+    .placeholder-file {
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      margin: auto;
+      width: 50px;
+      height: 50px;
+      line-height: 48px;
+      font-size: 30px;
+      color: white;
+      border-radius: 50%;
+      border: 2px solid white;
+    }
+
+    input {
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .card-body {
+    padding: 10px;
+  }
+}
+
+/**********/
+/* header */
+/**********/
+header {
+  .navbar {
+    padding-top: 15px;
+
+    .nav.login {
+      width: 100%;
+      // display: flex;
+      display: none;
+      justify-content: space-between;
+      align-items: center;
+      
+      i {
+        display: inline-block;
+        width: 44px; 
+        line-height: 40px;
+        border-radius: 50%;
+        border: 2px solid $brand-color-blue;
+        text-align: center;
+        color: $brand-color-blue;
+      }
+
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+
+/**********/
+/* footer */
+/**********/
+
+/************ MEDIA ***********/
+@media all and (max-width: 1440px) {
+	
+}
+
+@media all and (max-width: 1366px) {
+	
+}
+
+@media all and (max-width: 1280px) {
+	
+}
+
+@media all and (max-width: 960px) {
+	
+}
+
+@media all and (max-width: 640px) {	
+	
+}
+
+@media all and (max-width: 480px), only screen and (max-device-width: 480px) {
+
+}
