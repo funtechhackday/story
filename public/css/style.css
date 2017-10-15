@@ -5983,9 +5983,6 @@ textarea {
     height: auto;
     margin: auto; }
 
-.login {
-  display: none; }
-
 .feed .nav-tabs {
   margin-bottom: 20px; }
 
@@ -6027,9 +6024,11 @@ header .navbar {
   padding-top: 15px; }
   header .navbar .nav.login {
     width: 100%;
-    display: none;
+    display: flex;
     justify-content: space-between;
     align-items: center; }
+    header .navbar .nav.login.disnone {
+      display: none; }
     header .navbar .nav.login i {
       display: inline-block;
       width: 44px;
