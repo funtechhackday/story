@@ -30,6 +30,25 @@
 </head>
 
 <body class="lp">
+	<!-- <script>
+		window.fbAsyncInit = function () {
+			FB.init({
+				appId: '281725785677702',
+				cookie: true,
+				xfbml: true,
+				version: 'v2.7'
+			});
+			FB.AppEvents.logPageView();
+		};
+
+		(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) { return; }
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script> -->
 
 	<header>
 		<nav class="navbar navbar-default" role="navigation">
@@ -53,9 +72,9 @@
 							</span>
 						</li>
 					</ul>
-					<ul class="nav navbar-nav login">
+					<ul class="nav navbar-nav login disnone">
 						<li>
-							<a href="#">
+							<a href="#" class="add-story">
 								<i class="fa fa-pencil-square-o" aria-hidden="true"></i> Создать Story</a>
 						</li>
 						<li>
@@ -78,7 +97,7 @@
 
 	<div class="container">
 		<!-- stage welcome -->
-		<div class="row welcome no-login">
+		<div class="stage row welcome">
 			<div class="col-md-12 center">
 				<a href="/">
 					<img src="images/logo.png" alt="Story" />
@@ -86,10 +105,11 @@
 
 				<h1>Интересные истории с Вашими любимыми и друзьями</h1>
 				<p>Посмотреть через
-					<a href="http://facebook.com" target="_blank">Facebook
+					<a class="loginFB" href="http://facebook.com" target="_blank">Facebook
 						<i class="fa fa-facebook" aria-hidden="true"></i>
-					</a> или через
-					<a href="http://vk.com" target="_blank">Вконтакте
+					</a>
+					или через
+					<a class="loginVK" href="http://vk.com" target="_blank">Вконтакте
 						<i class="fa fa-vk" aria-hidden="true"></i>
 					</a>
 				</p>
@@ -100,7 +120,7 @@
 		</div>
 
 		<!-- stage feed -->
-		<div class="feed hide">
+		<div class="stage feed disnone">
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3">
 					<!-- Nav tabs -->
@@ -128,7 +148,7 @@
 									<h3 class="title">Ромео и Джульетта</h3>
 									<p class="desc">Две равноуважаемых семьи. В Вероне, где встречают нас события, Ведут междоусобные бои И не хотят унять кровопролития.
 										Друг друга любят дети главарей, о им судьба подстраивает козни.</p>
-									<a href="" class="btn btn-default pull-right">Создать историю</a>
+									<a href="" class="add-story btn btn-default pull-right">Создать историю</a>
 								</div>
 							</div>
 							<div class="card">
@@ -137,7 +157,7 @@
 									<h3 class="title">Ромео и Джульетта</h3>
 									<p class="desc">Две равноуважаемых семьи. В Вероне, где встречают нас события, Ведут междоусобные бои И не хотят унять кровопролития.
 										Друг друга любят дети главарей, о им судьба подстраивает козни.</p>
-									<a href="" class="btn btn-default pull-right">Создать историю</a>
+									<a href="" class="add-story btn btn-default pull-right">Создать историю</a>
 								</div>
 							</div>
 						</div>
@@ -150,7 +170,7 @@
 		</div>
 
 		<!-- stage Add story, step 1 -->
-		<div class="addStory step-1 hide">
+		<div class="stage addStory step-1 disnone">
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3">
 					<form role="form" action="#">
@@ -176,7 +196,7 @@
 							<p class="help-block">(не более 300 символов)</p>
 						</div>
 						<button type="reset" class="btn-btn-default">Отмена</button>
-						<button type="submit" class="btn btn-primary pull-right">
+						<button type="submit" class="done btn btn-primary pull-right">
 							<i class="fa fa-check" aria-hidden="true"></i> Готово</button>
 					</form>
 				</div>
@@ -184,7 +204,7 @@
 		</div>
 
 		<!-- stage Add story, step 2 -->
-		<div class="addStory step-2 hide">
+		<div class="stage addStory step-2 disnone">
 			<div class="card">
 				<div class="addImg rel">
 					<div class="placeholder-file abs">+</div>

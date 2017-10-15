@@ -174,9 +174,6 @@ textarea {
   }
 }
 
-// .no-login {display: none}
-.login {display: none}
-
 .feed {
   .nav-tabs {
     margin-bottom: 20px;
@@ -232,10 +229,11 @@ header {
 
     .nav.login {
       width: 100%;
-      // display: flex;
-      display: none;
+      display: flex;
       justify-content: space-between;
       align-items: center;
+
+      &.disnone {display: none;}
       
       i {
         display: inline-block;
